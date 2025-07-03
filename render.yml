@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: rabbitmq
+    env: docker
+    plan: free  # or use starter/pro depending on load
+    region: oregon  # or choose nearest region
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: RABBITMQ_DEFAULT_USER
+        value: guest
+      - key: RABBITMQ_DEFAULT_PASS
+        value: guest
+    ports:
+      - 5672
+      - 15672
