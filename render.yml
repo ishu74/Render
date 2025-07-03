@@ -7,9 +7,9 @@ services:
     dockerfilePath: ./Dockerfile
     envVars:
       - key: RABBITMQ_DEFAULT_USER
-        value: guest
+        value: guest12
       - key: RABBITMQ_DEFAULT_PASS
-        value: guest
+        value: guest@12
     ports:
       - 5672
       - 15672
