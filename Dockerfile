@@ -6,4 +6,4 @@ FROM rabbitmq:3.12-management
 # ENV RABBITMQ_DEFAULT_PASS=admin123
 
 # Expose AMQP and Management ports (for local testing or Render auto-detection)
-EXPOSE 5672 15672
+EXPOSE 5672 15672 
